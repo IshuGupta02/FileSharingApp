@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="mystyle1.css">
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P File Transfer</title>
+    
+</head>
+
+<body>
+    <section class="upload-container">
+        
+            <div class="drop-zone">
+                <input type="file" id="fileInput">
+                <div class="title">Either Drop your file here or  <br> <span id="browseBtn">Select from Device</span></div>
+            </div>
+        
+        <div class="sharing-container">
+            
+
+
+            <div class="input-container">
+                <input type="text" id="fileURL">
+                
+                <img src="./copy-icon.svg" id="copyURLBtn" alt="copy to clipboard icon">
+            </div>
+
+
+            <p class="email-info">Or Send via Email</p>
+            <div class="email-container">
+                <form id="emailForm">
+                    <div class="filed">
+                        <label for="fromEmail">Your email</label>
+                        <input type="email" autocomplete="email" required name="from-email" id="fromEmail">
+                    </div>
+
+                    <div class="filed">
+                        <label for="toEmail">Receiver's email</label>
+                        <input type="email" required autocomplete="receiver" name="to-email" id="toEmail">
+                    </div>
+                    <div class="send-btn-container">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="myindex1.js"></script>
+
+
+    
+</body>
+</html>
