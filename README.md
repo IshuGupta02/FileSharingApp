@@ -23,4 +23,13 @@ Features:
  Hitting send button will send mail ids and file to backend where mail will generated.
 * Appropriate Alert boxes and confirm boxes have been added to ask for confirmation for sending the mail, etc.
 
+Screenshot1:
+
+![s1](https://user-images.githubusercontent.com/76245139/111879822-01b77280-89ce-11eb-9a87-e141ede7b26c.PNG)
+
+Screenshot2:
+
+![s2](https://user-images.githubusercontent.com/76245139/111879829-13991580-89ce-11eb-830c-07f11adc2cdb.PNG)
+
+
 
