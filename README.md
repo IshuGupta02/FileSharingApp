@@ -3,8 +3,6 @@ Repo Link: https://github.com/IshuGupta02/FileSharingApp/tree/master
 
 Demo Link: NA
 
-Is this project one of the ideas listed on ideas document? No
-
 The purpose of the project is to ease file sharing between two devices. User has to upload file on the webpage which will generate a URL, then user can share this URL to another devices/users where the file can be downloaded.
 
 Tech Stack:
