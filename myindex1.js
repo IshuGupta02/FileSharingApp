@@ -1,3 +1,4 @@
+const uploadContainer=document.querySelector(".upload-container");
 const dropZone = document.querySelector(".drop-zone");
 const fileInput = document.querySelector("#fileInput");
 const browseBtn = document.querySelector("#browseBtn");
@@ -6,6 +7,7 @@ const copyURLBtn = document.querySelector("#copyURLBtn");
 const fileURL = document.querySelector("#fileURL");
 const emailForm = document.querySelector("#emailForm");
 const maxAllowedSize = 100 * 1024 * 1024; 
+
 
 browseBtn.addEventListener("click", (e) => {
   // console.clear();
@@ -53,10 +55,6 @@ dropZone.addEventListener("drop", (e) => {
     // console.log("uploaded, ", files[0].name);
 
   });
-
-
-
- 
 
 
   fileInput.addEventListener("change", () => {
