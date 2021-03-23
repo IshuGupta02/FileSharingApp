@@ -7,18 +7,33 @@ const fileURL = document.querySelector("#fileURL");
 const emailForm = document.querySelector("#emailForm");
 const maxAllowedSize = 100 * 1024 * 1024; 
 
-browseBtn.addEventListener("click", () => {
+browseBtn.addEventListener("click", (e) => {
   // console.clear();
     fileInput.click();
    // console.log("uploaded, ", files[0].name);
 });
 
+dropZone.addEventListener("dragover", (e) => {
+  e.preventDefault();
+ dropZone.classList.add("dragged");
+});
+
+
+
+dropZone.addEventListener("dragleave", (e) => {
+  dropZone.classList.remove("dragged");
+
+});
+
 
 dropZone.addEventListener("drop", (e) => {
+    e.preventDefault();
+   dropZone.classList.add("dragged");
 
   // console.clear();
-  e.preventDefault();
+   
     const files = e.dataTransfer.files;
+
     if (files.length === 1) {
         if (files[0].size < maxAllowedSize) {
         fileInput.files = files;
@@ -41,17 +56,7 @@ dropZone.addEventListener("drop", (e) => {
 
 
 
-  dropZone.addEventListener("dragover", (e) => {
-    e.preventDefault();
-    dropZone.classList.add("dragged");
-  });
-
-
-
-  dropZone.addEventListener("dragleave", (e) => {
-    dropZone.classList.remove("dragged");
-  
-  });
+ 
 
 
   fileInput.addEventListener("change", () => {
