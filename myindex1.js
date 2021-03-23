@@ -69,12 +69,7 @@ dropZone.addEventListener("drop", (e) => {
           console.log("file size exceeds maximum limit of 100mb");
           return;
         }
-        // else{
-        //   console.log("file size exceeds maximum limit of 100mb");
-
-        // }
-        
-        //console.log("hello");
+     
         
         uploadFile();
         
