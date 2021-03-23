@@ -6,7 +6,7 @@ const sharingContainer = document.querySelector(".sharing-container");
 const copyURLBtn = document.querySelector("#copyURLBtn");
 const fileURL = document.querySelector("#fileURL");
 const emailForm = document.querySelector("#emailForm");
-const maxAllowedSize = 100 * 1024 * 1024; 
+const maxAllowedSize = 100 * 1024*1024 ; 
 
 
 browseBtn.addEventListener("click", (e) => {
@@ -37,7 +37,7 @@ dropZone.addEventListener("drop", (e) => {
     const files = e.dataTransfer.files;
 
     if (files.length === 1) {
-        if (files[0].size < maxAllowedSize) {
+        if (files[0].size <= maxAllowedSize) {
         fileInput.files = files;
         
         uploadFile();
@@ -66,9 +66,18 @@ dropZone.addEventListener("drop", (e) => {
         if (fileInput.files[0].size > maxAllowedSize) {
 
           fileInput.value = ""; 
+          console.log("file size exceeds maximum limit of 100mb");
           return;
         }
+        // else{
+        //   console.log("file size exceeds maximum limit of 100mb");
+
+        // }
+        
+        //console.log("hello");
+        
         uploadFile();
+        
 
       }
 
@@ -83,6 +92,7 @@ dropZone.addEventListener("drop", (e) => {
 
   fileURL.addEventListener("click", () => {
     fileURL.select();
+    document.execCommand("copy");
   });
 
 
