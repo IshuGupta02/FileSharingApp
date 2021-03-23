@@ -188,8 +188,9 @@
   
       .email-container .filed {
         flex-direction: column;
-      }
-      .email-container .filed {
         width: 300px;
       }
+      /* .email-container .filed {
+        
+      } */
     }
