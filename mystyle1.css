@@ -28,12 +28,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .upload-container,
-  .drop-zone {
     flex-direction: column;
   }
+
   
   .upload-container {
     background-image:url("background-101.jfif");
