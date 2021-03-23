@@ -12,13 +12,13 @@
     }
     
     body {
-      font-family: sans-serif;
-     
+      
       background-image: url("backgroung.png");
       background-repeat:no-repeat;
       background-size: cover;
-  
-      height: 100vh;
+      /* align-self: center;
+      height: 90vh; */
+      height:100vh;
       
     }
   
@@ -41,8 +41,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items:center;
-
-
     height: 50vh;
     width: 100vh;
     
