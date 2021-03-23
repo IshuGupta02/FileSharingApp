@@ -57,7 +57,7 @@ dropZone.addEventListener("drop", (e) => {
   });
 
 
-  fileInput.addEventListener("change", () => {
+  fileInput.addEventListener("input", () => {
       if(fileInput.files.length==0){
         alert("To choose a file, either use drag or browse option");
 
