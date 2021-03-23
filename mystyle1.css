@@ -6,7 +6,7 @@
   
   
   :root {
-      --main-bg-color: #edf5fe;
+      
       --border-color: #02020247;
       --container-width: 500px;
     }
@@ -74,7 +74,7 @@
   
   
   .drop-zone.dragged {
-    background: var(--main-bg-color);
+    background-color: skyblue;
     border-color: #080808;
   }
   
@@ -127,7 +127,7 @@
       font-size: 20px;
       border: 2px solid var(--border-color);
       border-radius: 6px;
-      background: #f5fcff;
+       background: #f5fcff;  /* f5fcff */
       color: #607d8b;
     }
     
@@ -177,17 +177,14 @@
       font-size: 18px;
       padding: 8px 40px;
       margin-top: 15px;
-      background: var(--main-bg-color);
+      background: f5fcff;
       border: none;
       border-radius: 5px;
       color: #607d8b;
       cursor: pointer;
     }
   
-    @media screen and (max-width: 900px) {
-      :root {
-        --container-width: 320px;
-      }
+
   
       .email-container .filed {
         flex-direction: column;
