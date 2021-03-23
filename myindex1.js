@@ -98,33 +98,8 @@ dropZone.addEventListener("drop", (e) => {
 
     console.log("uploaded succesfully, ", files[0].name);
     fileURL.value=files[0].name;
-  
-    const xhr = new XMLHttpRequest();
 
-   
- 
   };
-
-
-
-  
-const onFileUploadSuccess = (res) => {
-  fileInput.value = ""; 
-
-  
-  
-
-  const { file: url } = JSON.parse(res);
-
-  console.clear();
-  console.log(files[0].name);
-  
-
-  sharingContainer.style.display = "block";
-  fileURL.value = url;
-  //console.log("uploaded, ", files[0].name);
-};
-
 
 
 emailForm.addEventListener("submit", (e) => {
