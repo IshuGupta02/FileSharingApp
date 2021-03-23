@@ -103,13 +103,9 @@ dropZone.addEventListener("drop", (e) => {
 
 
 emailForm.addEventListener("submit", (e) => {
-
-  confirm("Do you want to send the mail?");
   e.preventDefault(); 
 
-
-
-  const url = fileURL.value;
+  confirm("Do you want to send the mail?");
 
   const formData = {
    
