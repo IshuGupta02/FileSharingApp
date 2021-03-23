@@ -96,19 +96,7 @@ dropZone.addEventListener("drop", (e) => {
   
     const xhr = new XMLHttpRequest();
 
-    xhr.upload.onerror = function () {
-      // showToast(`Error in upload: ${xhr.status}.`);
-      fileInput.value = ""; // reset the input
-    };
-
-    //listen for response which will give the link
-
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState == XMLHttpRequest.DONE) {
-        onFileUploadSuccess(xhr.responseText);
-      }
-    };
-
+   
  
   };
 
@@ -118,14 +106,14 @@ dropZone.addEventListener("drop", (e) => {
 const onFileUploadSuccess = (res) => {
   fileInput.value = ""; 
 
-  //emailForm[2].addAttribute("disabled");
+  
   
 
   const { file: url } = JSON.parse(res);
 
   console.clear();
   console.log(files[0].name);
-  // fileURL.value=files[0].name;
+  
 
   sharingContainer.style.display = "block";
   fileURL.value = url;
@@ -137,7 +125,7 @@ const onFileUploadSuccess = (res) => {
 emailForm.addEventListener("submit", (e) => {
 
   confirm("Do you want to send the mail?");
-  e.preventDefault(); // stop submission
+  e.preventDefault(); 
 
 
 
@@ -149,7 +137,7 @@ emailForm.addEventListener("submit", (e) => {
     emailFrom: emailForm.elements["from-email"].value,
   };
   console.log(formData);
-  fileURL.value=files[0].name;
+ 
   
 });
 
